@@ -26,7 +26,7 @@ function createGalleryMarkup(galleryItems) {
     })
     .join('');
 }
-console.log(galleryMarkup);
+// console.log(galleryMarkup);
 
 //Реализация делегирования на div.gallery и получение url большого изображения.
 
@@ -43,4 +43,10 @@ function onImageClick(e) {
   // console.log(e.target.dataset.source);
   const imgSourceUrl = e.target.dataset.source;
   console.log(imgSourceUrl);
+
+  const instance = basicLightbox.create(`
+    <img src="${imgSourceUrl}">
+`);
+
+  instance.show();
 }
