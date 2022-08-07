@@ -18,7 +18,7 @@ function createGalleryMarkup(galleryItems) {
     })
     .join('');
 }
-//Реализация делегирования на div.gallery и получение url большого изображения.
+//Реализация делегирования на div.gallery
 
 galleryEl.addEventListener('click', onImageClick);
 
