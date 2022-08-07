@@ -21,19 +21,10 @@ function createGalleryMarkup(galleryItems) {
     })
     .join('');
 }
-//Реализация делегирования на div.gallery
 
-galleryEl.addEventListener('click', onImageClick);
-
-function onImageClick(e) {
-  e.preventDefault();
-  if (e.target.nodeName !== 'IMG') {
-    return;
-  }
-  let lightbox = new SimpleLightbox('.gallery a', {
-    // captions: true,
-    // captionType: 'attr',
-    captionsData: 'alt',
-    captionDelay: 250,
-  });
-}
+let lightbox = new SimpleLightbox('.gallery a', {
+  // captions: true,
+  // captionType: 'attr',
+  captionsData: 'alt',
+  captionDelay: 250,
+});
