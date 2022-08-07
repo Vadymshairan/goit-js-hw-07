@@ -42,7 +42,7 @@ function onImageClick(e) {
   //   console.log('event.currentTarget: ', event.currentTarget);
   // console.log(e.target.dataset.source);
   const imgSourceUrl = e.target.dataset.source;
-  console.log(imgSourceUrl);
+  // console.log(imgSourceUrl);
 
   const instance = basicLightbox.create(`
     <img src="${imgSourceUrl}">
